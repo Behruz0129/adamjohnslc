@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="uz">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Adam & Johns LC - Sifatli taʼlim va tarbiya | Farg'ona</title>
+
+        <!-- SEO Meta Tags -->
+        <meta
+            name="description"
+            content="Adam & Johns LC - Farg'ona shahridagi sifatli ta'lim markazi. Ingliz tili, IELTS, Prezident maktabiga tayyorlov, Rus tili va Mental arifmetika kurslari."
+        />
+        <meta
+            name="keywords"
+            content="Adam Johns, Farg'ona ta'lim, IELTS kursi, Prezident maktabi, ingliz tili, rus tili, mental arifmetika, ta'lim markazi"
+        />
+        <meta name="author" content="Adam & Johns LC" />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="Adam & Johns LC - Sifatli taʼlim va tarbiya"
+        />
+        <meta
+            property="og:description"
+            content="Farg'ona shahridagi sifatli ta'lim markazi. Ingliz tili, IELTS, Prezident maktabiga tayyorlov kurslari."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://adam-johns-lc.netlify.app" />
+        <meta
+            property="og:image"
+            content="https://adam-johns-lc.netlify.app/assets/logo.png"
+        />
+        <meta property="og:site_name" content="Adam & Johns LC" />
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Adam & Johns LC - Sifatli taʼlim va tarbiya"
+        />
+        <meta
+            name="twitter:description"
+            content="Farg'ona shahridagi sifatli ta'lim markazi. Ingliz tili, IELTS, Prezident maktabiga tayyorlov kurslari."
+        />
+        <meta
+            name="twitter:image"
+            content="https://adam-johns-lc.netlify.app/assets/logo.png"
+        />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="assets/logo.png" />
+        <link rel="apple-touch-icon" href="assets/logo.png" />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://adam-johns-lc.netlify.app" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#2563eb",
+                            secondary: "#1e40af",
+                            accent: "#f59e0b",
+                        },
+                        animation: {
+                            "fade-in": "fadeIn 0.6s ease-in-out",
+                            "slide-up": "slideUp 0.8s ease-out",
+                            "slide-down": "slideDown 0.8s ease-out",
+                            "scale-in": "scaleIn 0.6s ease-out",
+                            "bounce-in": "bounceIn 1s ease-out",
+                            float: "float 3s ease-in-out infinite",
+                            "pulse-slow":
+                                "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            .gradient-bg {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            }
+            .hero-bg {
+                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+            .smooth-scroll {
+                scroll-behavior: smooth;
+            }
+
+            /* Animatsiyalar */
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes slideUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes slideDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes scaleIn {
+                from {
+                    opacity: 0;
+                    transform: scale(0.8);
+                }
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            @keyframes bounceIn {
+                0% {
+                    opacity: 0;
+                    transform: scale(0.3);
+                }
+                50% {
+                    opacity: 1;
+                    transform: scale(1.05);
+                }
+                70% {
+                    transform: scale(0.9);
+                }
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            @keyframes float {
+                0%,
+                100% {
+                    transform: translateY(0px);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+
+            /* Scroll animatsiyalari */
+            .animate-on-scroll {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 0.8s ease-out;
+            }
+
+            .animate-on-scroll.animate {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            /* Gradient text */
+            .gradient-text {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            /* Glow effect */
+            .glow {
+                box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+            }
+
+            .glow:hover {
+                box-shadow: 0 0 30px rgba(37, 99, 235, 0.5);
+            }
+
+            /* Responsive image styles */
+            @media (max-width: 640px) {
+                .hero-image {
+                    max-width: 100%;
+                    height: auto;
+                    max-height: 250px;
+                    width: 100%;
+                }
+
+                .teacher-image {
+                    height: 180px !important;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                .teacher-card {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            @media (min-width: 641px) and (max-width: 768px) {
+                .hero-image {
+                    max-width: 90%;
+                    height: auto;
+                    max-height: 350px;
+                }
+
+                .teacher-image {
+                    height: 200px !important;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            @media (min-width: 769px) {
+                .hero-image {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                .teacher-image {
+                    height: 192px !important;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            /* Image loading optimization */
+            img {
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            img[loading] {
+                opacity: 0.7;
+            }
+
+            img:not([loading]) {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body class="smooth-scroll">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-lg fixed w-full z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center">
+                        <img
+                            src="assets/logo.png"
+                            alt="Adam & Johns LC"
+                            class="h-8 sm:h-10 w-auto"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex space-x-8">
+                        <a
+                            href="#about"
+                            class="text-gray-600 hover:text-primary transition duration-300"
+                            >Biz haqimizda</a
+                        >
+                        <a
+                            href="#advantages"
+                            class="text-gray-600 hover:text-primary transition duration-300"
+                            >Afzalliklar</a
+                        >
+                        <a
+                            href="#teachers"
+                            class="text-gray-600 hover:text-primary transition duration-300"
+                            >Ustozlar</a
+                        >
+                        <a
+                            href="#courses"
+                            class="text-gray-600 hover:text-primary transition duration-300"
+                            >Kurslar</a
+                        >
+                        <a
+                            href="#contact"
+                            class="text-gray-600 hover:text-primary transition duration-300"
+                            >Aloqa</a
+                        >
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button
+                            id="mobile-menu-btn"
+                            class="text-gray-600 hover:text-primary"
+                        >
+                            <svg
+                                class="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden pb-4">
+                    <div class="flex flex-col space-y-4">
+                        <a
+                            href="#about"
+                            class="text-gray-600 hover:text-primary transition duration-300"
+                            >Biz haqimizda</a
+                        >
+                        <a
+                            href="#advantages"
+                            class="text-gray-600 hover:text-primary transition duration-300"
+                            >Afzalliklar</a
+                        >
+                        <a
+                            href="#teachers"
+                            class="text-gray-600 hover:text-primary transition duration-300"
+                            >Ustozlar</a
+                        >
+                        <a
+                            href="#courses"
+                            class="text-gray-600 hover:text-primary transition duration-300"
+                            >Kurslar</a
+                        >
+                        <a
+                            href="#contact"
+                            class="text-gray-600 hover:text-primary transition duration-300"
+                            >Aloqa</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section
+            id="home"
+            class="bg-gray-100 text-gray-800 pt-24 pb-16 animate-on-scroll"
+        >
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="text-left">
+                        <h2 class="text-3xl md:text-4xl font-semibold mb-6">
+                            Sifatli taʼlim va tarbiya orqali jamiyatimizni
+                            yuksaltiramiz
+                        </h2>
+                        <p class="text-lg md:text-xl mb-8 text-gray-600">
+                            Bizning maqsadimiz har bir o'quvchiga sifatli ta'lim
+                            berish va ularning kelajakdagi muvaffaqiyatiga
+                            yordam berishdir.
+                        </p>
+                        <a
+                            href="#contact"
+                            class="bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-secondary transition duration-300 inline-block glow hover:scale-105 transform"
+                        >
+                            Biz bilan bog'laning
+                        </a>
+                    </div>
+                    <div class="flex justify-center lg:justify-end">
+                        <img
+                            src="assets/hero.png"
+                            alt="Adam & Johns LC"
+                            class="w-full max-w-md lg:max-w-lg xl:max-w-xl h-auto object-contain animate-float hero-image"
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-gray-50 animate-on-scroll">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-gray-800 mb-6"
+                    >
+                        Biz haqimizda
+                    </h2>
+                    <div class="w-24 h-1 bg-primary mx-auto"></div>
+                </div>
+                <div class="max-w-4xl mx-auto text-center">
+                    <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                        Adam & Johns LC - bu sifatli taʼlim va tarbiya berish
+                        orqali jamiyatimizni yuksaltirish maqsadida tashkil
+                        etilgan ta'lim markazi. Biz har bir o'quvchining
+                        individual qobiliyatlarini rivojlantirish va ularga
+                        zamonaviy bilimlarni o'rgatish orqali kelajak avlodni
+                        tayyorlashga intilamiz.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section id="advantages" class="py-16 bg-gray-50 animate-on-scroll">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-gray-800 mb-6"
+                    >
+                        Nega biz?
+                    </h2>
+                    <div class="w-24 h-1 bg-primary mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md card-hover animate-on-scroll"
+                    >
+                        <div class="text-primary mb-4">
+                            <i
+                                data-lucide="graduation-cap"
+                                class="w-12 h-12"
+                            ></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">
+                            Tajribali o'qituvchilar
+                        </h3>
+                        <p class="text-gray-600">
+                            Yuqori malakali va tajribali ustozlarimiz bilan
+                            ishlaymiz.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-primary mb-4">
+                            <i data-lucide="check-circle" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">
+                            Individual yondashuv
+                        </h3>
+                        <p class="text-gray-600">
+                            Har bir o'quvchiga alohida e'tibor beramiz.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-primary mb-4">
+                            <i data-lucide="zap" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">
+                            Interaktiv metodika
+                        </h3>
+                        <p class="text-gray-600">
+                            Zamonaviy va samarali o'qitish usullaridan
+                            foydalanamiz.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-primary mb-4">
+                            <i data-lucide="users" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">
+                            Ota-onalar bilan doimiy aloqa
+                        </h3>
+                        <p class="text-gray-600">
+                            Ota-onalar bilan muntazam bog'lanish orqali
+                            natijalarni kuzatamiz.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-primary mb-4">
+                            <i data-lucide="calendar" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">
+                            5 yillik tajriba
+                        </h3>
+                        <p class="text-gray-600">
+                            Uzoq yillik tajriba va ko'p o'quvchilar bilan
+                            ishlash.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-primary mb-4">
+                            <i data-lucide="user-check" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">
+                            Har bir o'quvchiga 2 nafar ustoz
+                        </h3>
+                        <p class="text-gray-600">
+                            Ikki ustoz bilan ishlash orqali sifatli ta'lim
+                            ta'minlaymiz.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-primary mb-4">
+                            <i data-lucide="book-open" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">
+                            Bepul o'quv materiallari
+                        </h3>
+                        <p class="text-gray-600">
+                            Barcha o'quv materiallari bepul taqdim etiladi.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-primary mb-4">
+                            <i data-lucide="heart" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">
+                            Motivatsion muhit
+                        </h3>
+                        <p class="text-gray-600">
+                            O'quvchilarni rivojlantirish uchun qulay muhit
+                            yaratamiz.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-primary mb-4">
+                            <i data-lucide="building" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">
+                            Zamonaviy kutubxona
+                        </h3>
+                        <p class="text-gray-600">
+                            Eng so'nggi kitoblar va manbalar bilan ta'minlaymiz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teachers Section -->
+        <section id="teachers" class="py-16 bg-white animate-on-scroll">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-gray-800 mb-6"
+                    >
+                        Bizning ustozlarimiz
+                    </h2>
+                    <div class="w-24 h-1 bg-primary mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div
+                        class="bg-gray-50 rounded-lg overflow-hidden card-hover teacher-card"
+                    >
+                        <div class="p-4">
+                            <img
+                                src="assets/teacher1.JPG"
+                                alt="Rahimov Sohibqiron"
+                                class="w-full h-48 sm:h-56 md:h-48 object-cover object-center rounded-lg teacher-image"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Rahimov Sohibqiron
+                            </h3>
+                            <p class="text-gray-600 mb-2">
+                                500+ o'quvchi, 4 yillik tajriba
+                            </p>
+                            <p class="text-sm text-gray-500">
+                                Prezident maktabi va ixtisoslashgan maktablarga
+                                tayyorlov treneri
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-50 rounded-lg overflow-hidden card-hover teacher-card"
+                    >
+                        <div class="p-4">
+                            <img
+                                src="assets/teacher2.JPG"
+                                alt="Abduqodirov Muhammadislom"
+                                class="w-full h-48 sm:h-56 md:h-48 object-cover object-center rounded-lg teacher-image"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Abduqodirov Muhammadislom
+                            </h3>
+                            <p class="text-gray-600 mb-2">
+                                IELTS 8.0, 1.5 yillik tajriba
+                            </p>
+                            <p class="text-sm text-gray-500">
+                                Speaking'ni ko'tarish uchun eng yaxshi ustoz
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-50 rounded-lg overflow-hidden card-hover teacher-card"
+                    >
+                        <div class="p-4">
+                            <img
+                                src="assets/teacher3.JPG"
+                                alt="Toshtemirov Olimjon Abdug'aniyevich"
+                                class="w-full h-48 sm:h-56 md:h-48 object-cover object-center rounded-lg teacher-image"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Toshtemirov Olimjon Abdug'aniyevich (John tutor)
+                            </h3>
+                            <p class="text-gray-600 mb-2">
+                                12 yillik tajriba, IELTS 7.5
+                            </p>
+                            <p class="text-sm text-gray-500">
+                                2000+ o'quvchi, Xitoy universiteti bitiruvchisi
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-50 rounded-lg overflow-hidden card-hover teacher-card"
+                    >
+                        <div class="p-4">
+                            <img
+                                src="assets/teacher4.JPG"
+                                alt="Mehrnoz Abdullayeva"
+                                class="w-full h-48 sm:h-56 md:h-48 object-cover object-center rounded-lg teacher-image"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Mehrnoz Abdullayeva
+                            </h3>
+                            <p class="text-gray-600 mb-2">
+                                CEFR C1, 1.5 yillik tajriba
+                            </p>
+                            <p class="text-sm text-gray-500">
+                                Oliy ma'lumotli, qat'iyatli ustoz
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="py-16 bg-gray-50 animate-on-scroll">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-gray-800 mb-6"
+                    >
+                        Bizning kurslarimiz
+                    </h2>
+                    <div class="w-24 h-1 bg-primary mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md text-center card-hover animate-on-scroll"
+                    >
+                        <div class="text-primary mb-4">
+                            <i
+                                data-lucide="globe"
+                                class="w-12 h-12 mx-auto"
+                            ></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">
+                            Ingliz tili (IELTS & CEFR)
+                        </h3>
+                        <p class="text-gray-600">
+                            Xalqaro standartlar bo'yicha ingliz tili o'qitish
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md text-center card-hover animate-on-scroll"
+                    >
+                        <div class="text-primary mb-4">
+                            <i
+                                data-lucide="graduation-cap"
+                                class="w-12 h-12 mx-auto"
+                            ></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">
+                            Prezident maktabiga tayyorlov
+                        </h3>
+                        <p class="text-gray-600">
+                            Prezident maktablariga kirish uchun maxsus tayyorlov
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md text-center card-hover"
+                    >
+                        <div class="text-primary mb-4">
+                            <i
+                                data-lucide="globe"
+                                class="w-12 h-12 mx-auto"
+                            ></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Rus tili</h3>
+                        <p class="text-gray-600">
+                            Rus tilini o'qitish va amaliyot qilish
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md text-center card-hover"
+                    >
+                        <div class="text-primary mb-4">
+                            <i
+                                data-lucide="calculator"
+                                class="w-12 h-12 mx-auto"
+                            ></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">
+                            Mental arifmetika
+                        </h3>
+                        <p class="text-gray-600">
+                            Aqliy qobiliyatlarni rivojlantirish va hisob-kitob
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white animate-on-scroll">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-gray-800 mb-6"
+                    >
+                        Biz bilan bog'laning
+                    </h2>
+                    <div class="w-24 h-1 bg-primary mx-auto"></div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <!-- Contact Info -->
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="text-primary">
+                                <i data-lucide="phone" class="w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Telefon</h3>
+                                <p class="text-gray-600">73-200-63-60</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="text-primary">
+                                <i
+                                    data-lucide="message-circle"
+                                    class="w-8 h-8"
+                                ></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Telegram</h3>
+                                <p class="text-gray-600">
+                                    @adamjohns, @adamjohns21
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-primary mt-1">
+                                <i data-lucide="map-pin" class="w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Manzil</h3>
+                                <p class="text-gray-600">
+                                    Farg'ona shahri, Qirguli mavzesi, 21-maktab
+                                    ro'parasi
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="font-semibold text-lg mb-3">
+                                Qanday yetib borish
+                            </h3>
+                            <p class="text-gray-600">
+                                Farg'ona, Toshloq, Marg'ilon va boshqa
+                                shaharlardan avtobuslar orqali yetib borishingiz
+                                mumkin. 21-maktab ro'parasida joylashgan bo'lib,
+                                oson topish mumkin.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-6 text-gray-800">
+                            Ariza qoldiring
+                        </h3>
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label
+                                    for="name"
+                                    class="block text-sm font-medium text-gray-700 mb-2"
+                                >
+                                    Ism va Familiya
+                                </label>
+                                <input
+                                    id="name"
+                                    type="text"
+                                    name="username"
+                                    placeholder="Ism va Familiya"
+                                    required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300"
+                                />
+                            </div>
+                            <div>
+                                <label
+                                    for="phone"
+                                    class="block text-sm font-medium text-gray-700 mb-2"
+                                >
+                                    Telefon raqam
+                                </label>
+                                <input
+                                    id="phone"
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="+998 XX XXX XX XX"
+                                    required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300"
+                                />
+                            </div>
+                            <button
+                                type="submit"
+                                class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-secondary transition duration-300 transform hover:scale-105"
+                            >
+                                <i
+                                    data-lucide="send"
+                                    class="w-5 h-5 inline mr-2"
+                                ></i>
+                                Yuborish
+                            </button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div
+                            id="successMessage"
+                            class="hidden mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg"
+                        >
+                            <div class="flex items-center">
+                                <i
+                                    data-lucide="check-circle"
+                                    class="w-5 h-5 mr-2"
+                                ></i>
+                                <span
+                                    >Sizning ma'lumotingiz muvaffaqiyatli
+                                    yuborildi!</span
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Error Message -->
+                        <div
+                            id="errorMessage"
+                            class="hidden mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg"
+                        >
+                            <div class="flex items-center">
+                                <i
+                                    data-lucide="alert-circle"
+                                    class="w-5 h-5 mr-2"
+                                ></i>
+                                <span
+                                    >Iltimos, barcha maydonlarni to'g'ri
+                                    to'ldiring!</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="bg-gray-100 rounded-lg p-4">
+                        <div class="aspect-w-16 aspect-h-12">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.1234567890123!2d71.76527777777778!3d40.43319444444444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzU5LjUiTiA3McKwNDUnNTQuOSJF!5e0!3m2!1sen!2suz!4v1234567890123"
+                                width="100%"
+                                height="400"
+                                style="border: 0"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            >
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <img
+                                src="assets/logo.png"
+                                alt="Adam & Johns LC"
+                                class="h-6 sm:h-8 w-auto"
+                                loading="lazy"
+                            />
+                        </div>
+                        <p class="text-gray-300">
+                            Sifatli taʼlim va tarbiya orqali jamiyatimizni
+                            yuksaltiramiz.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Sahifalar</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    href="#home"
+                                    class="text-gray-300 hover:text-white transition duration-300"
+                                    >Bosh sahifa</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#courses"
+                                    class="text-gray-300 hover:text-white transition duration-300"
+                                    >Kurslar</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#contact"
+                                    class="text-gray-300 hover:text-white transition duration-300"
+                                    >Aloqa</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">
+                            Aloqa ma'lumotlari
+                        </h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-center space-x-2">
+                                <i data-lucide="phone" class="w-4 h-4"></i>
+                                <span>73-200-63-60</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i
+                                    data-lucide="message-circle"
+                                    class="w-4 h-4"
+                                ></i>
+                                <span>@adamjohns</span>
+                            </li>
+                            <li class="flex items-center space-x-2">
+                                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                <span>Farg'ona shahri</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                    <p class="text-gray-300">
+                        © Adam & Johns LC 2025. Barcha huquqlar himoyalangan.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            mobileMenuBtn.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        this.getAttribute("href")
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                    // Close mobile menu if open
+                    mobileMenu.classList.add("hidden");
+                });
+            });
+
+            // Navbar background on scroll
+            window.addEventListener("scroll", () => {
+                const navbar = document.querySelector("nav");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("bg-white", "shadow-lg");
+                } else {
+                    navbar.classList.remove("bg-white", "shadow-lg");
+                }
+            });
+
+            // Scroll animatsiyalari
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px",
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate");
+                    }
+                });
+            }, observerOptions);
+
+            // Barcha animate-on-scroll elementlarini kuzatish
+            document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+                observer.observe(el);
+            });
+
+            // Hero section animatsiyasi
+            const heroSection = document.querySelector("#home");
+            if (heroSection) {
+                heroSection.style.opacity = "0";
+                heroSection.style.transform = "translateY(30px)";
+
+                setTimeout(() => {
+                    heroSection.style.transition = "all 1s ease-out";
+                    heroSection.style.opacity = "1";
+                    heroSection.style.transform = "translateY(0)";
+                }, 100);
+            }
+
+            // Lucide ikonlarini ishga tushirish
+            lucide.createIcons();
+
+            // Image loading optimization
+            document.addEventListener("DOMContentLoaded", function () {
+                const images = document.querySelectorAll("img");
+
+                images.forEach((img) => {
+                    img.addEventListener("load", function () {
+                        this.style.opacity = "1";
+                    });
+
+                    img.addEventListener("error", function () {
+                        console.error("Rasm yuklanmadi:", this.src);
+                        this.style.display = "none";
+                        // Fallback uchun placeholder ko'rsatish
+                        const placeholder = document.createElement("div");
+                        placeholder.className =
+                            "bg-gray-200 flex items-center justify-center rounded-lg";
+                        placeholder.style.height = this.style.height || "200px";
+                        placeholder.innerHTML =
+                            '<span class="text-gray-500">Rasm yuklanmadi</span>';
+                        this.parentNode.insertBefore(placeholder, this);
+                    });
+                });
+            });
+
+            // Contact form handling
+            const contactForm = document.getElementById("contactForm");
+            const successMessage = document.getElementById("successMessage");
+            const errorMessage = document.getElementById("errorMessage");
+
+            contactForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+
+                const name = document.getElementById("name").value;
+                const phone = document.getElementById("phone").value;
+
+                // Validate form
+                if (!name || !phone) {
+                    errorMessage.classList.remove("hidden");
+                    successMessage.classList.add("hidden");
+                    return;
+                }
+
+                // Prepare message for Telegram
+                const my_text = `<i>Sizda yangi lead🙋‍♂️ bor</i>:%0A <b>- Ism:</b> ${name} %0A <b>- Telefon:</b> ${phone}`;
+
+                const token = "8024798455:AAHfOM2sZWem9m9NAYinui_S9hG4TQAS9V4";
+                const chat_id = -1002521852640;
+                const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${my_text}&parse_mode=html`;
+
+                // Send to Telegram
+                let api = new XMLHttpRequest();
+                api.open("GET", url, true);
+                api.send();
+
+                // Show success message
+                successMessage.classList.remove("hidden");
+                errorMessage.classList.add("hidden");
+                contactForm.reset();
+
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.add("hidden");
+                }, 5000);
+            });
+        </script>
+    </body>
+</html>

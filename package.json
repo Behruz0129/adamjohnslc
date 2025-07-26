@@ -1,0 +1,25 @@
+{
+    "name": "adam-jons",
+    "version": "1.0.0",
+    "description": "A modern, responsive landing website for Adam & Johns LC, an educational center in Fergana, Uzbekistan. Features beautiful animations, Lucide icons, and professional design.",
+    "main": "index.html",
+    "scripts": {
+        "start": "python -m http.server 8000",
+        "dev": "npx serve .",
+        "build": "echo 'Static site - no build required'",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "deploy": "echo 'Deploy to Netlify'"
+    },
+    "keywords": [
+        "education",
+        "uzbekistan",
+        "landing-page",
+        "responsive",
+        "modern"
+    ],
+    "author": "Adam & Johns LC",
+    "license": "ISC",
+    "dependencies": {
+        "lucide": "^0.263.1"
+    }
+}
