@@ -20,11 +20,11 @@ jobs:
                   node-version: "18"
                   cache: "npm"
 
-            - name: Install dependencies
-              run: npm ci
-
-            - name: Build project
-              run: npm run build
+                - name: Install dependencies
+      run: echo "Static site - no dependencies required"
+      
+    - name: Build project
+      run: echo "Static site - no build required"
 
             - name: Deploy to Netlify
               uses: nwtgck/actions-netlify@v2.0

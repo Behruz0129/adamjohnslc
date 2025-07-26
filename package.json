@@ -1,5 +1,5 @@
 {
-    "name": "adam-jons",
+    "name": "adam-johns-lc",
     "version": "1.0.0",
     "description": "A modern, responsive landing website for Adam & Johns LC, an educational center in Fergana, Uzbekistan. Features beautiful animations, Lucide icons, and professional design.",
     "main": "index.html",
@@ -15,11 +15,11 @@
         "uzbekistan",
         "landing-page",
         "responsive",
-        "modern"
+        "modern",
+        "static-site"
     ],
     "author": "Adam & Johns LC",
     "license": "ISC",
-    "dependencies": {
-        "lucide": "^0.263.1"
-    }
+    "dependencies": {},
+    "devDependencies": {}
 }

@@ -50,10 +50,11 @@ adam jons/
 1. **Add Images**: Place the following images in the `assets/` folder:
 
     - `logo.png` - Company logo
-    - `teacher1.png` - Rahimov Sohibqiron
-    - `teacher2.png` - Abduqodirov Muhammadislom
-    - `teacher3.png` - Toshtemirov Olimjon Abdug'aniyevich
-    - `teacher4.png` - Mehrnoz Abdullayeva
+    - `hero.png` - Hero section image
+    - `teacher1.JPG` - Rahimov Sohibqiron
+    - `teacher2.JPG` - Abduqodirov Muhammadislom
+    - `teacher3.JPG` - Toshtemirov Olimjon Abdug'aniyevich
+    - `teacher4.JPG` - Mehrnoz Abdullayeva
 
 2. **Open Website**: Simply open `index.html` in any modern web browser
 
@@ -66,6 +67,15 @@ adam jons/
     # Using Node.js
     npx serve .
     ```
+
+## 📦 Deployment
+
+This is a **static website** that can be deployed to any static hosting service:
+
+-   **Netlify**: Drag & drop or connect to GitHub
+-   **Vercel**: Connect to GitHub repository
+-   **GitHub Pages**: Enable in repository settings
+-   **Firebase Hosting**: Use Firebase CLI
 
 ## 📱 Responsive Design
 
